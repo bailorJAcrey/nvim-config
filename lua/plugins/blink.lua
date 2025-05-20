@@ -24,7 +24,13 @@ return {
             default = { 'lsp', 'path', 'snippets', 'buffer' },
         },
 
-        fuzzy = { implementation = "prefer_rust_with_warning" }
+        fuzzy = {
+            implementation = "prefer_rust_with_warning",
+            prebuilt_binaries = {
+                download = true,
+                force_version = "v1.3.1"
+            }
+        }
     },
     opts_extend = { "sources.default" }
 }
