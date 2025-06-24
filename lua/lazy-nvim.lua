@@ -28,6 +28,8 @@ require("lazy").setup({
         require("plugins.treesitter"),
         require("plugins.telescope"),
         require("plugins.oil"),
+        require("plugins.lazygit"),
+        require("plugins.toggleterm")
     },
     checker = { enabled = true },
 })
