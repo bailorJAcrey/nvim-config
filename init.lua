@@ -18,15 +18,6 @@ vim.opt.wrap = false
 vim.opt.cursorline = true
 vim.opt.signcolumn = 'no'
 
-vim.api.nvim_create_autocmd("VimResized", {
-    pattern = {'*'},
-    callback = function(event)
-        print(string.format("columns: %n", event.columns))
-        print(string.format("lines: %n", event.lines))
-        print("hello?")
-    end
-})
-
 vim.diagnostic.config({
     update_in_insert = true,
     virtual_text = true,
