@@ -63,5 +63,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 local lspconfig = require('lspconfig')
 lspconfig.rust_analyzer.setup({})
-lspconfig.lua_ls.setup({})
+lspconfig.lua_ls.setup({
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { 'vim' }
+            }
+        }
+    }
+})
 -- lspconfig.jdtls.setup({ cmd = { "jdt-language-server", "-data", vim.cmd.pwd } })
