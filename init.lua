@@ -18,6 +18,7 @@ vim.opt.wrap = false
 vim.opt.cursorline = true
 vim.opt.signcolumn = 'no'
 
+
 if vim.g.neovide == true then
     vim.opt.guifont = "Inconsolata Nerd Font:h12"
     vim.keymap.set('n', '<F11>', ":let g:neovide_fullscreen = !g:neovide_fullscreen<CR>")
@@ -44,6 +45,7 @@ require("lazy-nvim")
 
 vim.cmd.colorscheme("gruvbox")
 vim.cmd.TSEnable("highlight")
+vim.api.nvim_set_hl(0, "ModeMsg", { fg = "#8ec07c", bold = true })
 -- Setting highlight to 'true' in treesitter.lua doesn't enable highlighting for all parsers
 
 local lspconfig_defaults = require('lspconfig').util.default_config
