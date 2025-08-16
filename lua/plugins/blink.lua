@@ -28,7 +28,7 @@ return {
             implementation = "prefer_rust_with_warning",
             prebuilt_binaries = {
                 download = true,
-                force_version = "v1.3.1"
+                force_version = "v1.4.1"
             }
         }
     },
