@@ -29,7 +29,8 @@ require("lazy").setup({
         require("plugins.telescope"),
         require("plugins.oil"),
         require("plugins.lazygit"),
-        require("plugins.toggleterm")
+        require("plugins.toggleterm"),
+        require("plugins.render-markdown")
     },
     checker = { enabled = true },
 })
