@@ -57,17 +57,6 @@ return {
                     end
                 })
             else
-                vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { bg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopeResultsNormal", { bg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopePromptTitle", { bg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopePromptNormal", { bg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { bg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopePreviewNormal", { bg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "#282828", fg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { bg = "#282828", fg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopePromptBorder", { bg = "#282828", fg = "#282828" })
-                vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { bg = "#282828", fg = "#282828" })
-                vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#282828", fg = "#282828" })
             end
 
             -- End of copied code
@@ -78,7 +67,6 @@ return {
             require("telescope").setup({
                 defaults = {
                     borderchars = { " ", " ", " ", " ", " ", " ", " ", " " },
-                    -- borderchars = { "█", "█", "█", "█", "█", "█", "█", "█" },
                 },
                 pickers = {
                     find_files = {

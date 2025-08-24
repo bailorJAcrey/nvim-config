@@ -74,4 +74,12 @@ lspconfig.lua_ls.setup({
         }
     }
 })
+
+vim.api.nvim_set_hl(0, "TelescopeTitle", { bg = "#282828", fg = "#ebdbb2" })
+vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "#282828" })
+vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "#282828", fg = "#282828" })
+vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { link = "TelescopeBorder" })
+vim.api.nvim_set_hl(0, "TelescopePromptBorder", { link = "TelescopeBorder" })
+vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { link = "TelescopeBorder" })
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#282828", fg = "#282828" })
 -- lspconfig.jdtls.setup({ cmd = { "jdt-language-server", "-data", vim.cmd.pwd } })
