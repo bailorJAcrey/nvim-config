@@ -82,4 +82,6 @@ vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { link = "TelescopeBorder" })
 vim.api.nvim_set_hl(0, "TelescopePromptBorder", { link = "TelescopeBorder" })
 vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { link = "TelescopeBorder" })
 vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#282828", fg = "#282828" })
+vim.api.nvim_set_hl(0, "LazyGitFloat", { bg = "#282828" })
+
 -- lspconfig.jdtls.setup({ cmd = { "jdt-language-server", "-data", vim.cmd.pwd } })
