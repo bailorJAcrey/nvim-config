@@ -3,6 +3,8 @@ vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<C-s>", vim.cmd.w)
 vim.keymap.set("n", "<leader>|", vim.cmd.vsp)
 vim.keymap.set("n", "<leader>-", vim.cmd.sp)
+vim.keymap.set("v", "<C-y>", '"+y')
+vim.keymap.set("n", "<C-y><C-y>", '"+yy')
 vim.keymap.set( {"n", "i", "v"}, "<C-h>", function() vim.cmd [[wincmd h]] end)
 vim.keymap.set( {"n", "i", "v"}, "<C-j>", function() vim.cmd [[wincmd j]] end)
 vim.keymap.set( {"n", "i", "v"}, "<C-k>", function() vim.cmd [[wincmd k]] end)
