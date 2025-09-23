@@ -63,9 +63,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 })
 
-local lspconfig = require('lspconfig')
-lspconfig.rust_analyzer.setup({})
-lspconfig.lua_ls.setup({
+vim.lsp.enable("rust_analyzer")
+vim.lsp.config("rust_analyzer", {
+    capabilities = lspconfig_defaults,
+})
+vim.lsp.enable("lua_ls")
+vim.lsp.config("lua_ls", {
+    capabilities = lspconfig_defaults,
     settings = {
         Lua = {
             diagnostics = {
