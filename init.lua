@@ -58,6 +58,7 @@ lspconfig_defaults.capabilities = vim.tbl_deep_extend(
     require('blink.cmp').get_lsp_capabilities()
 )
 
+
 vim.api.nvim_create_autocmd('LspAttach', {
     desc = 'LSP actions',
     callback = function(event)
@@ -79,6 +80,20 @@ vim.lsp.config("lua_ls", {
             }
         }
     }
+})
+vim.lsp.enable("nil")
+vim.lsp.config("nil", {
+    capabilities = lspconfig_defaults,
+})
+vim.lsp.enable("tsserver")
+vim.lsp.config("tsserver", {
+    cmd = { "typescript-language-server", "--stdio" },
+    capabilities = lspconfig_defaults,
+})
+vim.filetype.add({extension = {gs = "javascript"}})
+vim.lsp.enable("gopls")
+vim.lsp.config("gopls", {
+    capabilities = lspconfig_defaults,
 })
 
 vim.api.nvim_set_hl(0, "TelescopeTitle", { bg = "#282828", fg = "#ebdbb2" })
