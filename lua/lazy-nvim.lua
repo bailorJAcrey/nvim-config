@@ -30,7 +30,8 @@ require("lazy").setup({
         require("plugins.oil"),
         require("plugins.lazygit"),
         require("plugins.toggleterm"),
-        require("plugins.render-markdown")
+        require("plugins.render-markdown"),
+        require("plugins.obsidian")
     },
     checker = { enabled = true },
 })
