@@ -31,7 +31,8 @@ require("lazy").setup({
         require("plugins.lazygit"),
         require("plugins.toggleterm"),
         require("plugins.render-markdown"),
-        require("plugins.obsidian")
+        require("plugins.obsidian"),
+        require("plugins.indent-blankline")
     },
     checker = { enabled = true },
 })
