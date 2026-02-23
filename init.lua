@@ -99,6 +99,8 @@ vim.lsp.enable("gopls")
 vim.lsp.config("gopls", {
     capabilities = lspconfig_defaults,
 })
+vim.lsp.enable("jdtls")
+vim.lsp.enable("clangd")
 
 vim.api.nvim_set_hl(0, "TelescopeTitle", { bg = "#282828", fg = "#ebdbb2" })
 vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "#282828" })
