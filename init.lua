@@ -66,6 +66,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 })
 
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 99
+
 vim.lsp.enable("rust_analyzer")
 vim.lsp.config("rust_analyzer", {
     capabilities = lspconfig_defaults,
