@@ -6,4 +6,7 @@ return {
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {},
+    config = function()
+        require("render-markdown").setup({pipe_table = { enable = true }})
+    end
 }
