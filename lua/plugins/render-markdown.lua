@@ -7,6 +7,10 @@ return {
     ---@type render.md.UserConfig
     opts = {},
     config = function()
-        require("render-markdown").setup({pipe_table = { enable = true }})
+        require("render-markdown").setup({
+            heading = { atx = false },
+            pipe_table = { enable = true },
+            quote = { repeat_linebreak = true }
+        })
     end
 }
