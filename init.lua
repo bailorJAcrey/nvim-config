@@ -9,6 +9,12 @@ vim.keymap.set( {"n", "i", "v"}, "<C-h>", function() vim.cmd [[wincmd h]] end)
 vim.keymap.set( {"n", "i", "v"}, "<C-j>", function() vim.cmd [[wincmd j]] end)
 vim.keymap.set( {"n", "i", "v"}, "<C-k>", function() vim.cmd [[wincmd k]] end)
 vim.keymap.set( {"n", "i", "v"}, "<C-l>", function() vim.cmd [[wincmd l]] end)
+vim.keymap.set("n", "<leader>jb", ":make build\n")
+vim.keymap.set("n", "<leader>jr", ":make run\n")
+vim.keymap.set("n", "<leader>qo", ":copen\n")
+vim.keymap.set("n", "<leader>qc", ":cclose\n")
+vim.keymap.set("n", "<leader>qn", ":cnext\n")
+vim.keymap.set("n", "<leader>qp", ":cprev\n")
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4
