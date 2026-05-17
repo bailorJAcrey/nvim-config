@@ -20,16 +20,14 @@ vim.opt.wrap = false
 vim.opt.cursorline = true
 vim.opt.signcolumn = 'no'
 
-if vim.g.neovide == true then
-    vim.opt.linespace = -4
-    vim.opt.guifont = "Inconsolata Nerd Font:h12"
-    vim.keymap.set('n', '<F11>', ":let g:neovide_fullscreen = !g:neovide_fullscreen<CR>")
-
-    vim.g.neovide_cursor_animation_length = 0.075
-    vim.g.neovide_cursor_trail_size = 0.7
-    vim.g.neovide_scroll_animation_length = 0.12
-    vim.g.neovide_hide_mouse_when_typing= true
-end
+vim.opt.linespace = -4
+vim.opt.guifont = "Inconsolata Nerd Font:h12"
+vim.g.neovide_cursor_animation_length = 0.075
+vim.g.neovide_cursor_trail_size = 0.7
+vim.g.neovide_scroll_animation_length = 0.12
+vim.g.neovide_hide_mouse_when_typing= true
+vim.g.neovide_normal_opacity = 0.45
+vim.keymap.set ("n", "<F11>", function() vim.g.neovide_fullscreen = not vim.g.neovide_fullscreen end)
 
 vim.diagnostic.config({
     update_in_insert = true,
