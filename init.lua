@@ -82,9 +82,10 @@ vim.lsp.config("lua_ls", {
         }
     }
 })
-vim.lsp.enable("nil")
-vim.lsp.config("nil", {
+vim.lsp.enable("nil_ls")
+vim.lsp.config("nil_ls", {
     capabilities = lspconfig_defaults,
+    --filetypes = {"nix"}
 })
 vim.lsp.enable("tsserver")
 vim.lsp.config("tsserver", {
@@ -98,6 +99,7 @@ vim.lsp.config("gopls", {
 })
 vim.lsp.enable("jdtls")
 vim.lsp.enable("clangd")
+vim.lsp.enable("texlab")
 
 vim.api.nvim_set_hl(0, "TelescopeTitle", { bg = "#282828", fg = "#ebdbb2" })
 vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "#282828" })
