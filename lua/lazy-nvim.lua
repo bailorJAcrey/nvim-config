@@ -21,6 +21,7 @@ require("lazy").setup({
         { "hrsh7th/cmp-nvim-lsp" },
         { "hrsh7th/nvim-cmp" },
         { "mfussenegger/nvim-jdtls" },
+        { "kylechui/nvim-surround" },
         --{ "tikhomirov/vim-glsl" },
         require("plugins.blink"),
         require("plugins.colorscheme"),
